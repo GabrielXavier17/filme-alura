@@ -1,75 +1,75 @@
 public class Titulo {
 
-    private String Nome;
-    private int AnoDeLancamento;
-    private boolean IncluidoNoPlano;
-    private double SomaDasAvaliacoes;
-    private int TotalDeAvaliacoes;
-    private int DuracaoEmMinutos;
+    private String nome;
+    private int anoDeLancamento;
+    private boolean incluidoNoPlano;
+    private double somaDasAvaliacoes;
+    private int totalDeAvaliacoes;
+    private int duracaoEmMinutos;
 
-    public String getNome() {
-        return Nome;
+    public String getnome() {
+        return nome;
     }
 
-    public void setNome(String Nome) {
-        this.Nome = Nome;
+    public void setNome(String nome) {
+        this.nome = nome;
     }
 
     public int getAnoDeLancamento() {
-        return AnoDeLancamento;
+        return anoDeLancamento;
     }
 
-    public void setAnoDeLancamento(int AnoDeLancamento) {
-        this.AnoDeLancamento = AnoDeLancamento;
+    public void setAnoDeLancamento(int anoDeLancamento) {
+        this.anoDeLancamento = anoDeLancamento;
     }
 
 
     public boolean isIncluidoNoPlano() {
-        return IncluidoNoPlano;
+        return incluidoNoPlano;
     }
 
-    public void setIncluidoNoPlano(boolean IncluidoNoPlano) {
-        this.IncluidoNoPlano = IncluidoNoPlano;
+    public void setIncluidoNoPlano(boolean incluidoNoPlano) {
+        this.incluidoNoPlano = incluidoNoPlano;
     }
 
     public double getSomaDasAvaliacoes() {
-        return SomaDasAvaliacoes;
+        return somaDasAvaliacoes;
     }
 
-    public void setSomaDasAvaliacoes(double SomaDasAvaliacoes) {
-        this.SomaDasAvaliacoes = SomaDasAvaliacoes;
+    public void setSomaDasAvaliacoes(double somaDasAvaliacoes) {
+        this.somaDasAvaliacoes = somaDasAvaliacoes;
     }
 
     public int getTotalDeAvaliacoes() {
-        return TotalDeAvaliacoes;
+        return totalDeAvaliacoes;
     }
 
-    public void setTotalDeAvaliacoes(int TotalDeAvaliacoes) {
-        this.TotalDeAvaliacoes = TotalDeAvaliacoes;
+    public void setTotalDeAvaliacoes(int totalDeAvaliacoes) {
+        this.totalDeAvaliacoes = totalDeAvaliacoes;
     }
 
     public int getDuracaoEmMinutos() {
-        return DuracaoEmMinutos;
+        return duracaoEmMinutos;
     }
 
-    public void setDuracaoEmMinutos(int DuracaoEmMinutos) {
-        this.DuracaoEmMinutos = DuracaoEmMinutos;
+    public void setDuracaoEmMinutos(int duracaoEmMinutos) {
+        this.duracaoEmMinutos = duracaoEmMinutos;
     }
 
     public void exibeFichaTecnica(){
-        System.out.println("Nome do filme: " + Nome);
-        System.out.println("Ano de lançamento: " + AnoDeLancamento);
+        System.out.println("Nome do filme: " + nome);
+        System.out.println("Ano de lançamento: " + anoDeLancamento);
     }
 
     public void avalia(double nota){
-        SomaDasAvaliacoes += nota;
-        TotalDeAvaliacoes++;
+        somaDasAvaliacoes += nota;
+        totalDeAvaliacoes++;
 
     }
 
 
     public double pegaMedia() {
-        return SomaDasAvaliacoes / TotalDeAvaliacoes;
+        return somaDasAvaliacoes / totalDeAvaliacoes;
     }
 
 

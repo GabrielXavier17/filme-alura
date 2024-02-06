@@ -2,16 +2,16 @@ public class Principal{
 
     public static void main(String[] args) {
         Filme meuFilme = new Filme();
-        meuFilme.setNome("O poderoso chefao");
+        meuFilme.setNome("O poderoso chefão");
         meuFilme.setAnoDeLancamento(1970);
         meuFilme.setDuracaoEmMinutos(180);
-        System.out.println("Duraçao do filme: " + meuFilme.getDuracaoEmMinutos());
+        System.out.println("Duração do filme: " + meuFilme.getDuracaoEmMinutos());
 
         meuFilme.exibeFichaTecnica();
         meuFilme.avalia(8);
         meuFilme.avalia(5);
         meuFilme.avalia(10);
-        System.out.println("Total das avaliaçoes: " + meuFilme.getTotalDeAvaliacoes());
+        System.out.println("Total das avaliações: " + meuFilme.getTotalDeAvaliacoes());
         System.out.println(meuFilme.pegaMedia());
         System.out.println();
 
@@ -24,7 +24,7 @@ public class Principal{
         lost.settemporadas(10);
         lost.setEpisodiosPorTemporada(10);
         lost.setMinutosPorTemporada(50);
-        System.out.println("Duraçao para maratonar Lost: " + lost.getDuracaoEmMinutos());
+        System.out.println("Duração para maratonar Lost: " + lost.getDuracaoEmMinutos());
 
         Filme outroFilme = new Filme();
         outroFilme.setNome("Avatar");
