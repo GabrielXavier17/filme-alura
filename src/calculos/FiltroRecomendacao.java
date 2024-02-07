@@ -1,3 +1,5 @@
+package calculos;
+
 public class FiltroRecomendacao {
     private String recomendacao;
 

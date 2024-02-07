@@ -1,3 +1,7 @@
+package calculos;
+
+import modelos.Titulo;
+
 public class CalculadoraDeTempo {
     private int tempoTotal;
 
